@@ -5,7 +5,7 @@ import {
   HarmCategory,
 } from '@google/generative-ai';
 import { Observable, throwError } from 'rxjs';
-import { environment } from '../../environments/environment.development';
+import { environment } from '../../environments/environment';
 
 export type RelationshipType = 'partner' | 'crush' | 'spouse';
 export type ToneType = 'romantic' | 'playful' | 'poetic';
