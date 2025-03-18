@@ -1,0 +1,85 @@
+<nav class="navbar bg-base-100 container mx-auto px-6 py-4">
+  <!-- Mobile Menu Button -->
+  <div class="navbar-start lg:hidden">
+    <div class="dropdown">
+      <div
+        tabindex="0"
+        role="button"
+        aria-label="Open menu"
+        class="btn btn-ghost btn-circle"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </div>
+      <ul
+        tabindex="0"
+        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+      >
+        <li>
+          <a
+            href="https://github.com/Talha-Tahir2001/SyntaxSweetheart/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-primary"
+            >🌟 on Github</a
+          >
+        </li>
+        <li>
+          <button type="button" aria-label="Toggle theme" class="text-primary" (click)="onThemeToggle()()">
+            {{ isDarkMode() ? "❤️‍🩹 Healing" : "💔 Damaged" }}
+          </button>
+          <button type="button" aria-label="About" class="text-primary sm:hidden">
+            <a routerLink="/about">❤️‍🔥 Learn More</a>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Logo -->
+  <div class="navbar-center lg:navbar-start">
+    <a routerLink="/" routerLinkActive="active" class="btn btn-ghost text-xl gap-2">
+      <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+        <path
+          d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+        />
+      </svg>
+      <span class="text-2xl font-bold text-primary">SyntaxSweetheart</span>
+    </a>
+  </div>
+
+  <!-- Desktop Navigation -->
+  <div class="navbar-end hidden lg:flex gap-2">
+    <a
+      href="https://github.com/Talha-Tahir2001/syntaxsweetheart"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="btn btn-primary bg-pink-500 hover:bg-pink-600 border-0 text-white"
+    >
+      🌟 on Github
+    </a>
+    <!-- <a routerLink="/about" class="btn btn-ghost text-primary hidden lg:flex">
+      ❣️ About
+    </a> -->
+    <button
+    aria-label="Toggle theme"
+      type="button"
+      class="btn btn-ghost btn-circle"
+      (click)="onThemeToggle()()"
+    >
+      <span class="text-3xl">@if (isDarkMode()) { 💔 } @else { ❤️‍🩹 }</span>
+    </button>
+  </div>
+</nav>
