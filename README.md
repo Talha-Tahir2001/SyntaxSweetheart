@@ -48,7 +48,7 @@ SyntaxSweetheart/
 
 1. **Clone the repo:**
    ```sh
-   git clone https://github.com/Talha-Tahir2001/SyntaxSweeteart.git
+   git clone https://github.com/Talha-Tahir2001/SyntaxSweetheart.git
    cd SyntaxSweetheart
    ```
 
