@@ -67,7 +67,7 @@ SyntaxSweetheart/
    ```sh
    ng serve
    ```
-   This starts the server-side rendered Angular app.
+   This starts the Angular app.
 
 5. **Build for production:**
    ```sh
