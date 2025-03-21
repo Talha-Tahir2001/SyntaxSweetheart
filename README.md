@@ -8,9 +8,9 @@ Welcome to **SyntaxSweetheart** 💘!
 
 Built with **Angular 19**, **TailwindCSS 4**, and **DaisyUI 5** for enhanced performance.
 
-<!--
-![App Screenshot](https://via.placeholder.com/1200x600.png/ff69b4/ffffff?text=SyntaxSweetheart+Demo)
---->
+
+![App Screenshot](/public/UI/home-light.png)
+
 
 ## 🚀 Features
 - 💌 **AI-generated romantic letters**
